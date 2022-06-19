@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
+                    <a href="#loginModal" id="loginButton">
                         <span class="fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -90,7 +90,7 @@
                     <img src="/img/logo.png" class="img-fluid " alt="Con Fusion Logo">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a role="button" href="#reservationform" class="btn btn-block nav-link btn-warning " data-toggle="modal" data-target="#reserveModal" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve Table</a>
+                    <a role="button" id="reservationButton" href="#reserveModal" class="btn btn-block nav-link btn-warning " data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>" data-placement="bottom">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -343,6 +343,21 @@
                     $('#carouselButton').children('span').addClass('fa-pause');
 
                 }
+            });
+        });
+        
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#reservationButton').click(function(){
+                $('#reserveModal').modal("show");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $('#loginButton').click(function(){
+                $('#loginModal').modal("show");
             });
         });
     </script>
