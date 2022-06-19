@@ -22,8 +22,8 @@ module.exports=function(grunt){
             dev: {
                 bsFiles:{
                     src:[
-                        'css/*.css'
-                        '*.html'
+                        'css/*.css',
+                        '*.html',
                         'js/*.js'
                     ]
                 },
